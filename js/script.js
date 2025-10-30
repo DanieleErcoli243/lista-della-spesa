@@ -15,12 +15,17 @@ const app = createApp ({
     ),
     methods: {
         saveItem() {
-            items.push({id: this.items.length + 1, label: this.newItem})
+            items.push({id: this.items.length + 1,
+                 label: this.newItem,
+                highPriority: this.newItemHighPriority
+                })
             this.newItem= ''
+            this.newItemHighPriority= ''
         },
         doEdit(editing) {
             this.editing = editing
             this.newItem = ''
+            this.newItemHighPriority= ''
         },
         togglePurchased(item) {
             item.purchased = !item.purchased
