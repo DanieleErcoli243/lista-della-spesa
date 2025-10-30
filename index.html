@@ -18,7 +18,7 @@
             </div>
             <form @submit.prevent="saveItem" v-if="editing">
                 <input type="text" placeholder="Aggiungi un elemento..." v-model.trim="newItem">
-                <p class="counter">{{characterCount}}/200</p>
+                
                 <label for="priority">High Priority</label>
                 <input type="checkbox" id="priority" v-model="newitemHighPriority">
                 <button :disabled="items.length === 0">Salva Elemento</button>
