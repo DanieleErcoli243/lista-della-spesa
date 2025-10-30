@@ -5,9 +5,9 @@ const app = createApp ({
     data: () => ({
         editing: false,
         items: [
-            {id: 1, label: '10 cappelli da festa'},
-            {id: 2, label: '2 giochi da tavolo'},
-            {id: 3, label: '20 bicchieri'}
+            {id: 1, label: '10 cappelli da festa', purchased: true},
+            {id: 2, label: '2 giochi da tavolo', purchased: true},
+            {id: 3, label: '20 bicchieri', purchased: false}
         ],
         newItem: '',
         newitemHighPriority: false
