@@ -21,6 +21,9 @@ const app = createApp ({
         doEdit(editing) {
             this.editing = editing
             this.newItem = ''
+        },
+        togglePurchased(item) {
+            item.purchased = !item.purchased
         }
     }
     
