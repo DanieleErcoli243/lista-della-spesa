@@ -8,7 +8,8 @@ const app = createApp ({
             {id: 2, label: '2 giochi da tavolo'},
             {id: 3, label: '20 bicchieri'}
         ],
-        newItem: ''
+        newItem: '',
+        newitemHighPriority: false
     })
 })
 
