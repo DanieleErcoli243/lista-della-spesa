@@ -17,6 +17,10 @@ const app = createApp ({
         saveItem() {
             items.push({id: this.items.length + 1, label: this.newItem})
             this.newItem= ''
+        },
+        doEdit(editing) {
+            this.editing = editing
+            this.newItem = ''
         }
     }
     

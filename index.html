@@ -13,8 +13,8 @@
         <header>
             <div>
                 <h1>Lista della Spesa</h1>
-                <button v-if="editing">Cancella</button>
-                <button v-else>Aggiungi Elemento</button>
+                <button v-if="editing" @click="doEdit(false)">Cancella</button>
+                <button v-else @click="doEdit(true)">Aggiungi Elemento</button>
             </div>
             <form @submit.prevent="saveItem" v-if="editing">
                 <input type="text" placeholder="Aggiungi un elemento..." v-model.trim="newItem">
