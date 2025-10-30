@@ -12,7 +12,7 @@
     <div id="app">
         <header>
             <h1>Lista della Spesa</h1>
-            <input type="text" placeholder="Aggiungi un elemento...">
+            <input type="text" placeholder="Aggiungi un elemento..." v-model="newItem">
             <ul>
                 <li v-for="item in items" :key="item.id">{{item.label}}</li>
             </ul>

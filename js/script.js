@@ -7,7 +7,8 @@ const app = createApp ({
             {id: 1, label: '10 cappelli da festa'},
             {id: 2, label: '2 giochi da tavolo'},
             {id: 3, label: '20 bicchieri'}
-        ]
+        ],
+        newItem: ''
     })
 })
 
