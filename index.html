@@ -12,7 +12,7 @@
     <div id="app">
         <header>
             <h1>Lista della Spesa</h1>
-            <form @submit.prevent="items.push({id: items.length + 1, label: newItem})">
+            <form @submit.prevent="">
                 <input type="text" placeholder="Aggiungi un elemento..." v-model.trim="newItem">
                 <label for="priority">High Priority</label>
                 <input type="checkbox" id="priority" v-model="newitemHighPriority">

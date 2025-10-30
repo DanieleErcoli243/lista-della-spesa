@@ -10,7 +10,15 @@ const app = createApp ({
         ],
         newItem: '',
         newitemHighPriority: false
-    })
+        }
+    ),
+    methods: {
+        saveItem() {
+            items.push({id: this.items.length + 1, label: this.newItem})
+        }
+    }
+    
+    
 })
 
 app.mount("#app");
