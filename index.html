@@ -11,8 +11,12 @@
 <body>
     <div id="app">
         <header>
-            <h1>Lista della Spesa</h1>
-            <form @submit.prevent="saveItem">
+            <div>
+                <h1>Lista della Spesa</h1>
+                <button v-if="editing">Cancella</button>
+                <button v-else>Aggiungi Elemento</button>
+            </div>
+            <form @submit.prevent="saveItem" v-if="editing">
                 <input type="text" placeholder="Aggiungi un elemento..." v-model.trim="newItem">
                 <label for="priority">High Priority</label>
                 <input type="checkbox" id="priority" v-model="newitemHighPriority">
