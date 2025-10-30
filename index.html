@@ -20,9 +20,9 @@
                 <input type="text" placeholder="Aggiungi un elemento..." v-model.trim="newItem">
                 <label for="priority">High Priority</label>
                 <input type="checkbox" id="priority" v-model="newitemHighPriority">
-                <button>Salva Elemento</button>
+                <button v-bind:disabled="items.length === 0">Salva Elemento</button>
             </form>
-            <a v-bind:href="newItem">Link Dinamico</a>
+            
             <p v-if="items.length === 0">Ben fatto! Hai comprato tutti gli elementi!</p>
             <ul>
                 <li v-for="item in items" :key="item.id">{{item.label}}</li>
