@@ -16,6 +16,9 @@ const app = createApp ({
     computed: {
         characterCount() {
             return this.newItem.length
+        },
+        reverseditems() {
+            return [...this.items].reverse()
         }
     },
     methods: {
