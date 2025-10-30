@@ -15,6 +15,7 @@ const app = createApp ({
     methods: {
         saveItem() {
             items.push({id: this.items.length + 1, label: this.newItem})
+            this.newItem= ''
         }
     }
     
