@@ -13,6 +13,11 @@ const app = createApp ({
         newitemHighPriority: false
         }
     ),
+    computed: {
+        characterCount() {
+            return this.newItem.length
+        }
+    },
     methods: {
         saveItem() {
             items.push({id: this.items.length + 1,
